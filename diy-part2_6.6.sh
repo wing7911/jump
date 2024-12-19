@@ -98,9 +98,9 @@ git clone -b master https://github.com/sirpdboy/luci-app-advanced package/lean/l
 git clone -b master https://github.com/sirpdboy/luci-app-autotimeset package/lean/luci-app-autotimeset
 sed -i 's/control"/system"/g' package/lean/luci-app-autotimeset/luasrc/controller/autotimeset.lua
 sed -i 's/control]/system]/g' package/lean/luci-app-autotimeset/luasrc/view/autotimeset/log.htm
-# git clone -b master https://github.com/kenzok8/openwrt-packages package/lean/openwrt-packages
-# \cp -rf package/lean/openwrt-packages/luci-app-openclash package/lean/small
-# \rm -rf package/lean/openwrt-packages
+git clone -b master https://github.com/kenzok8/openwrt-packages package/lean/openwrt-packages
+\cp -rf package/lean/openwrt-packages/luci-app-openclash package/lean/small
+\rm -rf package/lean/openwrt-packages
 \rm -rf feeds/packages/net/socat feeds/luci/applications/luci-app-socat
 git clone -b master https://github.com/xiangfeidexiaohuo/extra-ipk package/lean/extra-ipk
 \cp -rf package/lean/extra-ipk/op-socat package/lean/socat
